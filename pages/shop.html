@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Branding & Printing Gear | Grafyn Technology Kenya</title>
+    <meta name="description" content="Buy custom printed t-shirts Kenya, large format printers for sale Kenya, and premium branded apparel. High-quality printing services in Nairobi.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#EB3902',
+                        brandDark: '#c42f02',
+                        charcoal: '#121212',
+                        lightGray: '#F3F4F6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .product-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .product-card:hover { transform: translateY(-8px); shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .cart-drawer { transition: transform 0.4s ease-in-out; }
+        .bg-pattern { background-image: radial-gradient(#EB3902 0.5px, transparent 0.5px); background-size: 30px 30px; opacity: 0.05; }
+    </style>
+</head>
+
+<body class="font-sans text-charcoal bg-white overflow-x-hidden">
+
+    <header class="glass-nav fixed w-full z-50 border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-brand flex items-center justify-center rounded-lg text-white font-bold text-xl">GT</div>
+                    <span class="text-xl font-heading font-bold tracking-tight">GRAFYN SHOP</span>
+                </a>
+
+                <div class="hidden lg:flex space-x-8 items-center font-semibold text-[14px]">
+                    <a href="#" class="hover:text-brand transition">Home</a>
+                    <a href="#categories" class="hover:text-brand transition">Categories</a>
+                    <a href="#products" class="text-brand">Shop All</a>
+                    <button onclick="toggleCart()" class="relative p-2 hover:bg-gray-100 rounded-full transition">
+                        <i class="fa-solid fa-cart-shopping text-xl"></i>
+                        <span class="absolute top-0 right-0 bg-brand text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full border-2 border-white">2</span>
+                    </button>
+                </div>
+                <button class="lg:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 bg-lightGray overflow-hidden">
+        <div class="absolute inset-0 bg-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="inline-block px-4 py-1 bg-orange-100 text-brand text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Premium Equipment & Apparel</span>
+                <h1 class="text-5xl lg:text-6xl font-heading font-bold leading-tight mb-6">
+                    Shop Quality <br><span class="text-brand">Printing Solutions</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-10 max-w-lg leading-relaxed">
+                    Browse high-performance large format printers, premium branded apparel, and professional printing materials in Nairobi.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#products" class="bg-brand text-white px-10 py-4 rounded-xl font-bold hover:bg-brandDark transition-all shadow-xl shadow-brand/20">Shop Now</a>
+                    <a href="#categories" class="bg-white text-charcoal border border-gray-200 px-10 py-4 rounded-xl font-bold hover:bg-gray-50 transition-all">Browse Categories</a>
+                </div>
+            </div>
+            <div class="hidden lg:block" data-aos="zoom-in">
+                <img src="https://images.unsplash.com/photo-1610450949065-2f234773820a?auto=format&fit=crop&q=80&w=800" alt="Large format printers for sale Kenya" class="rounded-[3rem] shadow-2xl rotate-2">
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="py-24">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-heading font-bold">Product Categories</h2>
+                    <p class="text-gray-500 mt-2">Find exactly what your business needs</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <a href="#" class="group bg-lightGray p-8 rounded-[2rem] text-center hover:bg-brand transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="fa-solid fa-shirt text-brand text-2xl group-hover:text-brand"></i>
+                    </div>
+                    <h3 class="font-bold text-lg group-hover:text-white">Custom Clothing</h3>
+                </a>
+                <a href="#" class="group bg-lightGray p-8 rounded-[2rem] text-center hover:bg-brand transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="fa-solid fa-print text-brand text-2xl group-hover:text-brand"></i>
+                    </div>
+                    <h3 class="font-bold text-lg group-hover:text-white">Printing Services</h3>
+                </a>
+                <a href="#" class="group bg-lightGray p-8 rounded-[2rem] text-center hover:bg-brand transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="fa-solid fa-industry text-brand text-2xl group-hover:text-brand"></i>
+                    </div>
+                    <h3 class="font-bold text-lg group-hover:text-white">Industrial Printers</h3>
+                </a>
+                <a href="#" class="group bg-lightGray p-8 rounded-[2rem] text-center hover:bg-brand transition-all duration-500">
+                    <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                        <i class="fa-solid fa-box-open text-brand text-2xl group-hover:text-brand"></i>
+                    </div>
+                    <h3 class="font-bold text-lg group-hover:text-white">Materials</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="pb-32 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-12">
+            
+            <aside class="w-full lg:w-64 space-y-10">
+                <div>
+                    <h4 class="font-bold mb-6 text-lg border-b pb-2">Filter by Price</h4>
+                    <input type="range" class="w-full accent-brand" min="0" max="500000">
+                    <div class="flex justify-between text-sm mt-2 font-semibold text-gray-500">
+                        <span>KES 0</span>
+                        <span>KES 500k</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-lg border-b pb-2">Sort By</h4>
+                    <select class="w-full bg-lightGray p-3 rounded-xl outline-none text-sm font-semibold">
+                        <option>Newest Arrivals</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Best Selling</option>
+                    </select>
+                </div>
+            </aside>
+
+            <div class="flex-1">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="product-card group bg-white rounded-[2rem] border border-gray-100 p-4 shadow-sm overflow-hidden" data-aos="fade-up">
+                        <div class="relative aspect-square rounded-[1.5rem] overflow-hidden bg-gray-50 mb-6">
+                            <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?auto=format&fit=crop&q=80&w=600" alt="Buy large format printer Kenya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-brand text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase">Best Seller</div>
+                        </div>
+                        <div class="px-2">
+                            <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Printers</span>
+                            <h3 class="text-lg font-bold mt-1">XP-600 Eco-Solvent Printer</h3>
+                            <p class="text-brand font-bold text-xl mt-2">KES 450,000</p>
+                            <div class="mt-6 flex gap-2">
+                                <button class="flex-1 bg-charcoal text-white py-3 rounded-xl font-bold text-sm hover:bg-brand transition-colors">Add to Cart</button>
+                                <button class="p-3 bg-lightGray rounded-xl hover:bg-gray-200 transition"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group bg-white rounded-[2rem] border border-gray-100 p-4 shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <div class="relative aspect-square rounded-[1.5rem] overflow-hidden bg-gray-50 mb-6">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=600" alt="Buy custom printed t-shirts Kenya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2">
+                            <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Apparel</span>
+                            <h3 class="text-lg font-bold mt-1">Premium Heavyweight Tee</h3>
+                            <p class="text-brand font-bold text-xl mt-2">KES 1,200</p>
+                            <div class="mt-6 flex gap-2">
+                                <button class="flex-1 bg-charcoal text-white py-3 rounded-xl font-bold text-sm hover:bg-brand transition-colors">Add to Cart</button>
+                                <button class="p-3 bg-lightGray rounded-xl hover:bg-gray-200 transition"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card group bg-white rounded-[2rem] border border-gray-100 p-4 shadow-sm overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative aspect-square rounded-[1.5rem] overflow-hidden bg-gray-50 mb-6">
+                            <img src="https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?auto=format&fit=crop&q=80&w=600" alt="Large format printing services Nairobi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="px-2">
+                            <span class="text-gray-400 text-xs font-bold uppercase tracking-widest">Services</span>
+                            <h3 class="text-lg font-bold mt-1">PVC Vinyl Banner (Per Sqm)</h3>
+                            <p class="text-brand font-bold text-xl mt-2">KES 850</p>
+                            <div class="mt-6 flex gap-2">
+                                <button class="flex-1 bg-charcoal text-white py-3 rounded-xl font-bold text-sm hover:bg-brand transition-colors">Add to Cart</button>
+                                <button class="p-3 bg-lightGray rounded-xl hover:bg-gray-200 transition"><i class="fa-solid fa-eye"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="cartOverlay" onclick="toggleCart()" class="fixed inset-0 bg-black/50 z-[60] hidden opacity-0 transition-opacity duration-300"></div>
+    <div id="cartDrawer" class="cart-drawer fixed top-0 right-0 h-full w-full max-w-md bg-white z-[70] translate-x-full shadow-2xl p-8 flex flex-col">
+        <div class="flex justify-between items-center mb-10">
+            <h2 class="text-2xl font-heading font-bold">Your Cart</h2>
+            <button onclick="toggleCart()" class="text-2xl"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <div class="flex-1 overflow-y-auto space-y-6">
+            <div class="flex gap-4 border-b pb-6">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&q=80&w=100" class="w-20 h-20 rounded-xl object-cover">
+                <div class="flex-1">
+                    <h4 class="font-bold text-sm">Premium Heavyweight Tee</h4>
+                    <p class="text-gray-500 text-xs mt-1">Qty: 1</p>
+                    <p class="text-brand font-bold mt-2">KES 1,200</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-8 space-y-4">
+            <div class="flex justify-between font-bold text-xl">
+                <span>Total</span>
+                <span>KES 1,200</span>
+            </div>
+            <button class="w-full bg-brand text-white py-5 rounded-2xl font-bold hover:bg-brandDark transition shadow-lg shadow-brand/20">Checkout Direct</button>
+            <button class="w-full bg-[#25D366] text-white py-5 rounded-2xl font-bold flex items-center justify-center gap-3">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Order via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <section class="py-24 bg-charcoal text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-heading font-bold mb-6">Need Custom Branding or Bulk Orders?</h2>
+            <p class="text-gray-400 mb-10 text-lg leading-relaxed">We offer special pricing for corporate branding and bulk supply of printing equipment. Let's grow your business together.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="/pages/contact.html" class="bg-brand text-white px-12 py-5 rounded-2xl font-bold hover:scale-105 transition shadow-xl shadow-brand/20">Request Quote</a>
+                <a href="/pages/contact.html" class="bg-white/10 text-white border border-white/20 px-12 py-5 rounded-2xl font-bold hover:bg-white/20 transition">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white border-t py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs font-bold uppercase tracking-[0.2em]">
+            <p>© 2026 Grafyn Technology Shop. All Rights Reserved.</p>
+            <div class="flex space-x-8 mt-6 md:mt-0">
+                <a href="#" class="hover:text-brand">Privacy Policy</a>
+                <a href="#" class="hover:text-brand">Terms of Service</a>
+                <a href="#" class="hover:text-brand">Shipping Info</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        function toggleCart() {
+            const drawer = document.getElementById('cartDrawer');
+            const overlay = document.getElementById('cartOverlay');
+            drawer.classList.toggle('translate-x-full');
+            overlay.classList.toggle('hidden');
+            setTimeout(() => overlay.classList.toggle('opacity-0'), 10);
+        }
+    </script>
+</body>
+</html>

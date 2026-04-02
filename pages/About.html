@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Grafyn Technology - Innovation & Design</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#EB3902',
+                        brandDark: '#c42f02',
+                        charcoal: '#0F172A',
+                        slate: '#64748B',
+                        lightGray: '#F8FAFC',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(235, 57, 2, 0.05), transparent),
+                        radial-gradient(circle at bottom left, rgba(15, 23, 42, 0.02), transparent);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+    <header class="glass-nav fixed w-full z-50 border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="/" class="flex items-center space-x-2 group">
+                    <div class="w-10 h-10 bg-brand flex items-center justify-center rounded-lg text-white font-bold text-xl group-hover:rotate-6 transition-transform">GT</div>
+                    <div>
+                        <span class="text-xl font-heading font-bold tracking-tight block leading-none">GRAFYN</span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">Powering Your Brand</span>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex space-x-7 items-center font-semibold text-[14px]">
+                    <a href="/pages/Home.html" class="text-brand">Home</a>
+                    <a href="/pages/About.html" class="hover:text-brand transition" >About</a>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-brand">Services <i class="fa-solid fa-chevron-down ml-1 text-[10px]"></i></button>
+                        <div class="absolute hidden group-hover:block w-56 bg-white shadow-2xl rounded-xl mt-2 py-3 border border-gray-100">
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Graphic Design Nairobi</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">T-Shirt Printing</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Large Format Printing</a>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-brand">Technology <i class="fa-solid fa-chevron-down ml-1 text-[10px]"></i></button>
+                        <div class="absolute hidden group-hover:block w-64 bg-white shadow-2xl rounded-xl mt-2 py-3 border border-gray-100">
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Software Development Kenya</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Business Automation</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Web Design Nairobi</a>
+                        </div>
+                    </div>
+
+                    <a href="#shop" class="hover:text-brand transition">Shop</a>
+                    <a href="#portfolio" class="hover:text-brand transition">Portfolio</a>
+                    <a href="/pages/contact.html" class="bg-brand text-white px-7 py-3 rounded-full hover:bg-brandDark transition shadow-lg shadow-brand/30">Get Quote</a>
+                </div>
+
+                <button class="lg:hidden text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+        </nav>
+    </header>
+</head>
+<body class="bg-white text-charcoal overflow-x-hidden">
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-gradient">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div data-aos="fade-up">
+                <span class="inline-block px-4 py-1.5 bg-orange-100 text-brand text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Bridging Physical & Digital</span>
+                <h1 class="text-5xl lg:text-7xl font-heading font-bold tracking-tight leading-[1.1] mb-8">
+                    Powering Brands Through <br>
+                    <span class="text-brand">Print, Technology & Innovation</span>
+                </h1>
+                <p class="max-w-2xl mx-auto text-lg lg:text-xl text-slate leading-relaxed mb-10">
+                    We are a hybrid agency redefining how businesses scale by combining high-end branding and large-format printing with cutting-edge software solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="/pages/services.html" class="bg-brand text-white px-8 py-4 rounded-2xl font-bold hover:bg-brandDark shadow-xl shadow-brand/20 transition-all">View Services</a>
+                    <a href="/pages/contact.html" class="bg-white border border-gray-200 text-charcoal px-8 py-4 rounded-2xl font-bold hover:border-brand hover:text-brand transition-all">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute top-1/4 -left-20 w-64 h-64 bg-brand/5 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl lg:text-4xl font-heading font-bold mb-6">Creativity Driven by <span class="text-brand">Technology</span></h2>
+                    <p class="text-lg text-slate leading-relaxed mb-6">
+                        Founded on the principle that a brand's identity exists both in the physical world and the digital landscape, we help businesses grow through a unified approach. Whether it's the texture of a branded hoodie or the seamless code of a custom web application, we prioritize precision and impact.
+                    </p>
+                    <p class="text-lg text-slate leading-relaxed">
+                        Our team blends the artistic eye of designers with the analytical mind of engineers, ensuring every project is innovative, reliable, and professional.
+                    </p>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <div class="aspect-video bg-lightGray rounded-[2rem] overflow-hidden shadow-2xl relative z-10 flex items-center justify-center">
+                        <i class="fa-solid fa-microchip text-brand/20 text-9xl"></i>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand rounded-3xl -z-0 opacity-10 rotate-12"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-lightGray">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 bg-white rounded-[2.5rem] shadow-sm border border-gray-100 bento-item" data-aos="zoom-in-up">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-brand mb-8 text-2xl">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="text-slate leading-relaxed">To empower businesses by delivering high-quality branding, printing, and digital solutions that foster growth, visibility, and long-term success.</p>
+                </div>
+                <div class="p-10 bg-white rounded-[2.5rem] shadow-sm border border-gray-100 bento-item" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-8 text-2xl">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Our Vision</h3>
+                    <p class="text-slate leading-relaxed">To become Africa's leading innovation-driven company, recognized for bridging the gap between physical branding and digital excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl lg:text-4xl font-heading font-bold mb-4">Our Core Expertise</h2>
+                <div class="w-20 h-1.5 bg-brand mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-lightGray hover:bg-white transition-all border border-transparent hover:border-gray-100 group shadow-sm bento-item text-center" data-aos="fade-up">
+                    <div class="w-20 h-20 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-sm text-brand text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-vest-patches"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Clothing Branding</h4>
+                    <p class="text-slate text-sm">Premium custom apparel, corporate uniforms, and professional merchandise branding.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-lightGray hover:bg-white transition-all border border-transparent hover:border-gray-100 group shadow-sm bento-item text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-20 h-20 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-sm text-brand text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-print"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Large Format Printing</h4>
+                    <p class="text-slate text-sm">High-impact banners, billboards, signage, and professional vehicle branding.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-lightGray hover:bg-white transition-all border border-transparent hover:border-gray-100 group shadow-sm bento-item text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-20 h-20 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-sm text-brand text-3xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Software Development</h4>
+                    <p class="text-slate text-sm">Responsive business websites, custom CRM systems, and workflow automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-charcoal text-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl lg:text-4xl font-heading font-bold mb-6">Why Partner With Us?</h2>
+                    <p class="text-slate mb-10">We don't just provide services; we build long-term value for your brand through a unique mix of skillsets.</p>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand text-xl"></i>
+                            <div>
+                                <h5 class="font-bold">Premium Quality</h5>
+                                <p class="text-xs text-slate">Only the best materials & code.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand text-xl"></i>
+                            <div>
+                                <h5 class="font-bold">Fast Delivery</h5>
+                                <p class="text-xs text-slate">Strict adherence to deadlines.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand text-xl"></i>
+                            <div>
+                                <h5 class="font-bold">Competitive Rates</h5>
+                                <p class="text-xs text-slate">Value-driven, transparent pricing.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fa-solid fa-circle-check text-brand text-xl"></i>
+                            <div>
+                                <h5 class="font-bold">Hybrid Expertise</h5>
+                                <p class="text-xs text-slate">Physical & digital mastery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white/5 p-1 rounded-3xl" data-aos="fade-left">
+                    <div class="p-12 bg-white/5 border border-white/10 rounded-3xl">
+                        <h4 class="text-2xl font-bold mb-6 italic">"Our Journey"</h4>
+                        <p class="text-slate leading-relaxed mb-6">
+                            What started as a passion for design has evolved into a powerhouse of innovation. We began by helping small local brands find their voice through print. 
+                        </p>
+                        <p class="text-slate leading-relaxed">
+                            Recognizing the shift in the global economy, we integrated software development to ensure our clients aren't just seen on the streets, but dominate the digital space too. Today, we are committed to excellence in every stitch, every pixel, and every line of code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6" data-aos="zoom-in">
+            <div class="bg-brand rounded-[3rem] p-12 lg:p-20 text-center text-white shadow-2xl shadow-brand/40 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-3xl lg:text-5xl font-heading font-bold mb-6">Let's Build Your Brand Together</h2>
+                    <p class="text-lg opacity-90 mb-10 max-w-xl mx-auto">Ready to take your business to the next level? Contact our team for a custom quote today.</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="#" class="bg-white text-brand px-10 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition-transform">Contact Us</a>
+                        <a href="#" class="bg-charcoal text-white px-10 py-4 rounded-2xl font-bold shadow-lg hover:scale-105 transition-transform">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    </script>
+    
+    <footer class="bg-charcoal text-white pt-24 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-16 mb-20">
+                <div>
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="w-8 h-8 bg-brand rounded flex items-center justify-center font-bold">GT</div>
+                        <span class="text-xl font-heading font-bold">GRAFYN</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">
+                        Grafyn Technology is Kenya's premier hub for <strong>branding</strong>, <strong>large format printing</strong>, and high-end <strong>software development</strong> solutions. Powering brands with innovation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-brand transition text-lg"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-brand transition text-lg"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-brand transition text-lg"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-8 border-l-4 border-brand pl-4">Our Services</h5>
+                    <ul class="text-gray-400 space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-brand transition">Web Design Nairobi</a></li>
+                        <li><a href="#" class="hover:text-brand transition">T-Shirt Printing Kenya</a></li>
+                        <li><a href="#" class="hover:text-brand transition">Software Development</a></li>
+                        <li><a href="#" class="hover:text-brand transition">Vehicle Branding Nairobi</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-8 border-l-4 border-brand pl-4">Company</h5>
+                    <ul class="text-gray-400 space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-brand transition">About Grafyn Tech</a></li>
+                        <li><a href="#" class="hover:text-brand transition">Our Portfolio</a></li>
+                        <li><a href="#" class="hover:text-brand transition">Shop Printers</a></li>
+                        <li><a href="#" class="hover:text-brand transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5 class="font-bold text-lg mb-8 border-l-4 border-brand pl-4">Contact Info</h5>
+                    <p class="text-gray-400 text-sm mb-4"><i class="fa-solid fa-location-dot text-brand mr-2"></i> Nairobi, Kenya</p>
+                    <p class="text-gray-400 text-sm mb-4"><i class="fa-solid fa-phone text-brand mr-2"></i> +254 (0) 7XX XXX XXX</p>
+                    <p class="text-gray-400 text-sm"><i class="fa-solid fa-envelope text-brand mr-2"></i> info@grafyn.co.ke</p>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs">
+                <p>&copy; 2026 Grafyn Technology. Powering Your Brand. All Rights Reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/0703565195" class="fixed bottom-8 right-8 bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-[100] hover:scale-110 transition-all border-4 border-white">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Our Portfolio | Grafyn Technology - Branding & Software Excellence</title>
+    <meta name="description" content="Explore Grafyn Technology's portfolio of clothing branding services Kenya, large format printing Nairobi, and custom software development services Kenya.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#EB3902',
+                        brandDark: '#c42f02',
+                        charcoal: '#121212',
+                        lightGray: '#F9FAFB',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
+        .gradient-text { background: linear-gradient(90deg, #EB3902, #ff7e5f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .portfolio-item { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .filter-btn.active { @apply bg-brand text-white shadow-lg shadow-brand/20; }
+        .hero-pattern { background-color: #F9FAFB; background-image: radial-gradient(#EB3902 0.5px, transparent 0.5px); background-size: 20px 20px; opacity: 0.4; }
+    </style>
+</head>
+
+<body class="font-sans text-charcoal bg-white overflow-x-hidden">
+
+  
+    <header class="glass-nav fixed w-full z-50 border-b border-gray-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="/" class="flex items-center space-x-2 group">
+                    <div class="w-10 h-10 bg-brand flex items-center justify-center rounded-lg text-white font-bold text-xl group-hover:rotate-6 transition-transform">GT</div>
+                    <div>
+                        <span class="text-xl font-heading font-bold tracking-tight block leading-none">GRAFYN</span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-semibold">Powering Your Brand</span>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex space-x-7 items-center font-semibold text-[14px]">
+                    <a href="/pages/Home.html" class="text-brand">Home</a>
+                    <a href="/pages/About.html" class="hover:text-brand transition" >About</a>
+                    
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-brand">Services <i class="fa-solid fa-chevron-down ml-1 text-[10px]"></i></button>
+                        <div class="absolute hidden group-hover:block w-56 bg-white shadow-2xl rounded-xl mt-2 py-3 border border-gray-100">
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Graphic Design Nairobi</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">T-Shirt Printing</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Large Format Printing</a>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <button class="flex items-center hover:text-brand">Technology <i class="fa-solid fa-chevron-down ml-1 text-[10px]"></i></button>
+                        <div class="absolute hidden group-hover:block w-64 bg-white shadow-2xl rounded-xl mt-2 py-3 border border-gray-100">
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Software Development Kenya</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Business Automation</a>
+                            <a href="#" class="block px-5 py-2 hover:bg-brand hover:text-white transition">Web Design Nairobi</a>
+                        </div>
+                    </div>
+
+                    <a href="#shop" class="hover:text-brand transition">Shop</a>
+                    <a href="#portfolio" class="hover:text-brand transition">Portfolio</a>
+                    <a href="/pages/contact.html" class="bg-brand text-white px-7 py-3 rounded-full hover:bg-brandDark transition shadow-lg shadow-brand/30">Get Quote</a>
+                </div>
+
+                <button class="lg:hidden text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative pt-40 pb-20 lg:pt-52 lg:pb-32 bg-lightGray overflow-hidden">
+        <div class="absolute inset-0 hero-pattern"></div>
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <div data-aos="fade-up">
+                <h1 class="text-5xl lg:text-7xl font-heading font-bold leading-[1.1] mb-6">
+                    Our Work <span class="gradient-text">Speaks for Itself</span>
+                </h1>
+                <p class="text-lg lg:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Explore our portfolio of branding, printing, and software projects delivered with precision and creativity across Kenya.
+                </p>
+                <a href="/pages/contact.html" class="bg-brand text-white px-10 py-5 rounded-2xl font-bold inline-flex items-center hover:bg-brandDark transition-all shadow-xl shadow-brand/20">
+                    Get a Quote <i class="fa-solid fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white sticky top-20 z-40 border-b border-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div id="filters" class="flex flex-wrap justify-center gap-3">
+                <button class="filter-btn active px-8 py-3 rounded-full font-bold text-sm transition-all border border-gray-200" data-filter="*">All Work</button>
+                <button class="filter-btn px-8 py-3 rounded-full font-bold text-sm transition-all border border-gray-200 hover:border-brand" data-filter=".branding">Clothing Branding</button>
+                <button class="filter-btn px-8 py-3 rounded-full font-bold text-sm transition-all border border-gray-200 hover:border-brand" data-filter=".printing">Large Format Printing</button>
+                <button class="filter-btn px-8 py-3 rounded-full font-bold text-sm transition-all border border-gray-200 hover:border-brand" data-filter=".software">Software Development</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid-container flex flex-wrap -mx-4">
+                
+                <div class="portfolio-item branding w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer" data-aos="fade-up">
+                        <div class="aspect-[4/3] overflow-hidden bg-gray-100">
+                            <img src="https://via.placeholder.com/600x450" alt="Clothing branding services Kenya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-brand font-bold text-xs uppercase tracking-widest">Clothing Branding</span>
+                            <h3 class="text-xl font-bold mt-2">Corporate Apparel Line</h3>
+                            <p class="text-gray-500 text-sm mt-3">High-quality embroidery and screen printing for leading tech firms in Nairobi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item printing w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                        <div class="aspect-[4/3] overflow-hidden bg-gray-100">
+                            <img src="https://via.placeholder.com/600x450" alt="Large format printing Nairobi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-brand font-bold text-xs uppercase tracking-widest">Printing</span>
+                            <h3 class="text-xl font-bold mt-2">Nairobi Mall Signage</h3>
+                            <p class="text-gray-500 text-sm mt-3">Vibrant PVC banners and 3D illuminated signage for retail excellence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item software w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="group relative bg-white rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                        <div class="aspect-[4/3] overflow-hidden bg-gray-100">
+                            <img src="https://via.placeholder.com/600x450" alt="Software development services Kenya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-brand font-bold text-xs uppercase tracking-widest">Software</span>
+                            <h3 class="text-xl font-bold mt-2">Logistics CRM System</h3>
+                            <p class="text-gray-500 text-sm mt-3">Custom business automation platform for fleet management and tracking.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-lightGray">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-heading font-bold mb-16 text-center">Featured <span class="text-brand">Success Story</span></h2>
+            
+            <div class="bg-white rounded-[3rem] overflow-hidden shadow-xl flex flex-col lg:flex-row" data-aos="zoom-in">
+                <div class="lg:w-1/2">
+                    <img src="https://via.placeholder.com/800x600" alt="Featured Project" class="w-full h-full object-cover">
+                </div>
+                <div class="lg:w-1/2 p-12 lg:p-20 flex flex-col justify-center">
+                    <span class="inline-block px-4 py-1 bg-orange-100 text-brand text-xs font-bold rounded-full mb-6 uppercase tracking-widest">Case Study</span>
+                    <h3 class="text-3xl font-bold mb-6">National Branding Rollout</h3>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        <strong>Problem:</strong> A nationwide retailer needed a unified physical and digital identity across 15 branches in Kenya. <br><br>
+                        <strong>Solution:</strong> We provided custom <strong>large format printing</strong> for storefronts and developed a centralized inventory <strong>software system</strong>.
+                    </p>
+                    <div class="flex gap-4">
+                        <div class="text-center bg-lightGray p-4 rounded-2xl flex-1">
+                            <span class="block text-2xl font-bold text-brand">100%</span>
+                            <span class="text-[10px] uppercase text-gray-500 font-bold">Consistency</span>
+                        </div>
+                        <div class="text-center bg-lightGray p-4 rounded-2xl flex-1">
+                            <span class="block text-2xl font-bold text-brand">30%</span>
+                            <span class="text-[10px] uppercase text-gray-500 font-bold">Efficiency Increase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-16">Client Testimonials</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-10 rounded-[2.5rem] bg-lightGray relative">
+                    <i class="fa-solid fa-quote-left text-brand/20 text-5xl absolute top-8 left-8"></i>
+                    <p class="text-lg text-gray-600 italic mb-8 relative z-10">"Grafyn Technology transformed our brand's physical presence. Their printing quality is unmatched in Nairobi."</p>
+                    <h5 class="font-bold">Creative Director, Apex Agency</h5>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-lightGray relative">
+                    <i class="fa-solid fa-quote-left text-brand/20 text-5xl absolute top-8 left-8"></i>
+                    <p class="text-lg text-gray-600 italic mb-8 relative z-10">"Their software team built our custom ERP from scratch. It has automated our entire workflow perfectly."</p>
+                    <h5 class="font-bold">CEO, TechLink Logistics</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-brand rounded-[3rem] p-12 lg:p-20 text-center text-white shadow-2xl shadow-brand/40 relative overflow-hidden">
+                <div class="relative z-10">
+                    <h2 class="text-4xl lg:text-6xl font-heading font-bold mb-6">Ready to Bring Your <br>Project to Life?</h2>
+                    <div class="flex flex-wrap justify-center gap-4 mt-10">
+                        <a href="/pages/contact.html" class="bg-white text-brand px-10 py-5 rounded-2xl font-bold hover:scale-105 transition shadow-lg">Contact Us Today</a>
+                        <a href="/pages/contact.html" class="bg-charcoal text-white px-10 py-5 rounded-2xl font-bold hover:scale-105 transition shadow-lg">Start Your Project</a>
+                    </div>
+                </div>
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-charcoal text-white pt-24 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-16 mb-20">
+                <div>
+                    <div class="flex items-center space-x-2 mb-8">
+                        <div class="w-8 h-8 bg-brand rounded flex items-center justify-center font-bold text-white">GT</div>
+                        <span class="text-xl font-heading font-bold">GRAFYN</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-8">Leading hub for <strong>branding</strong>, <strong>large format printing</strong>, and high-end <strong>software development</strong> solutions in Kenya.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-brand transition"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center hover:bg-brand transition"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-bold text-lg mb-8 border-l-4 border-brand pl-4">Services</h5>
+                    <ul class="text-gray-400 space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-brand transition">Web Design Nairobi</a></li>
+                        <li><a href="#" class="hover:text-brand transition">T-Shirt Printing Kenya</a></li>
+                        <li><a href="#" class="hover:text-brand transition">Large Format Printing</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-lg mb-8 border-l-4 border-brand pl-4">Company</h5>
+                    <ul class="text-gray-400 space-y-4 text-sm">
+                        <li><a href="/pages/About.html" class="hover:text-brand transition">About Us</a></li>
+                        <li><a href="#portfolio" class="hover:text-brand transition">Our Portfolio</a></li>
+                        <li><a href="/pages/contact.html" class="hover:text-brand transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-lg mb-8 border-l-4 border-brand pl-4">Contact</h5>
+                    <p class="text-gray-400 text-sm mb-4 italic leading-relaxed"><i class="fa-solid fa-location-dot text-brand mr-2"></i> Nairobi, Kenya</p>
+                    <p class="text-gray-400 text-sm"><i class="fa-solid fa-envelope text-brand mr-2"></i> info@grafyn.co.ke</p>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-10 text-center text-gray-500 text-[10px] uppercase tracking-widest">
+                &copy; 2026 Grafyn Technology. Powering Your Brand.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Isotope Filtering
+        const grid = document.querySelector('.grid-container');
+        const iso = new Isotope(grid, {
+            itemSelector: '.portfolio-item',
+            layoutMode: 'fitRows',
+            transitionDuration: '0.6s'
+        });
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filterValue = btn.getAttribute('data-filter');
+                iso.arrange({ filter: filterValue });
+            });
+        });
+    </script>
+</body>
+</html>
